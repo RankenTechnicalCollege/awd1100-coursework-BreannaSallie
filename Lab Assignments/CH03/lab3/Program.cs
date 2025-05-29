@@ -24,7 +24,8 @@ double salary2Year1 = salary2 + (salary2 * PERCENT_RAISE);
 double salary2Year2 = salary2Year1 + (salary2Year1 * PERCENT_RAISE);    
 
 double salary3Year1 = salary3 + (salary3 * PERCENT_RAISE);  
-double salary3Year2 = salary3Year1 + (salary3Year1 * PERCENT_RAISE);    
+double salary3Year2 = salary3Year1 + (salary3Year1 * PERCENT_RAISE);
+
 
 
 
@@ -36,5 +37,4 @@ Console.WriteLine("-------------------------------------------------");
 Console.WriteLine($"{name1,-15}{salary1Year1,-10:C}{salary1Year2,-10:C}");  
 Console.WriteLine($"{name2,-15}{salary1Year1,-10:C}{salary2Year2,-10:C}");
 Console.WriteLine($"{name3,-15}{salary1Year1,-10:C}{salary3Year2,-10:C}");
-
 
