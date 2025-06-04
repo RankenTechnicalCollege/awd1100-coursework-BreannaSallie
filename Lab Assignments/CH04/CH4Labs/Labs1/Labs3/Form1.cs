@@ -1,0 +1,6 @@
+namespace Labs3
+        {
+
+        }
+    }
+}
