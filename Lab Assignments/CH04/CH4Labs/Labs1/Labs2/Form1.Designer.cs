@@ -41,7 +41,7 @@
             // 
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.Font = new Font("Segoe UI", 12F);
-            label1.Location = new Point(219, 85);
+            label1.Location = new Point(203, 75);
             label1.Name = "label1";
             label1.Size = new Size(308, 25);
             label1.TabIndex = 0;
