@@ -101,7 +101,7 @@
             // 
             this.lblDanielle.Location = new System.Drawing.Point(13, 196);
             this.lblDanielle.Name = "lblDanielle";
-            this.lblDanielle.Size = new System.Drawing.Size(159, 22);
+            this.lblDanielle.Size = new System.Drawing.Size(183, 22);
             this.lblDanielle.TabIndex = 6;
             this.lblDanielle.Text = "Danielle Sales: $0.00";
             // 
@@ -109,7 +109,7 @@
             // 
             this.lblEdward.Location = new System.Drawing.Point(13, 218);
             this.lblEdward.Name = "lblEdward";
-            this.lblEdward.Size = new System.Drawing.Size(159, 22);
+            this.lblEdward.Size = new System.Drawing.Size(202, 22);
             this.lblEdward.TabIndex = 7;
             this.lblEdward.Text = "Edward Sales: $0.00";
             // 
@@ -117,7 +117,7 @@
             // 
             this.lblFrancis.Location = new System.Drawing.Point(13, 240);
             this.lblFrancis.Name = "lblFrancis";
-            this.lblFrancis.Size = new System.Drawing.Size(159, 22);
+            this.lblFrancis.Size = new System.Drawing.Size(202, 22);
             this.lblFrancis.TabIndex = 8;
             this.lblFrancis.Text = "Francis Sales: $0.00";
             // 
@@ -125,7 +125,7 @@
             // 
             this.lblGrandTotal.Location = new System.Drawing.Point(12, 262);
             this.lblGrandTotal.Name = "lblGrandTotal";
-            this.lblGrandTotal.Size = new System.Drawing.Size(159, 22);
+            this.lblGrandTotal.Size = new System.Drawing.Size(203, 22);
             this.lblGrandTotal.TabIndex = 9;
             this.lblGrandTotal.Text = "Grand Total: $0.00";
             // 

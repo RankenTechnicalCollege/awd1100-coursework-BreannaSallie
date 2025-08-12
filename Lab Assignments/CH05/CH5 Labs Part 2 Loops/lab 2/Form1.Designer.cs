@@ -1,4 +1,4 @@
-﻿namespace Lab2
+﻿namespace Lab_2
 {
     partial class Form1
     {
@@ -34,8 +34,8 @@
             this.lblCount = new System.Windows.Forms.Label();
             this.lblSum = new System.Windows.Forms.Label();
             this.lblAvg = new System.Windows.Forms.Label();
-            this.lblMin = new System.Windows.Forms.Label();
-            this.lblMax = new System.Windows.Forms.Label();
+            this.lblLowest = new System.Windows.Forms.Label();
+            this.lblHighest = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -71,7 +71,7 @@
             this.lblCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCount.Location = new System.Drawing.Point(38, 175);
             this.lblCount.Name = "lblCount";
-            this.lblCount.Size = new System.Drawing.Size(160, 23);
+            this.lblCount.Size = new System.Drawing.Size(193, 23);
             this.lblCount.TabIndex = 3;
             this.lblCount.Text = "Number of scores: ";
             // 
@@ -80,7 +80,7 @@
             this.lblSum.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSum.Location = new System.Drawing.Point(38, 207);
             this.lblSum.Name = "lblSum";
-            this.lblSum.Size = new System.Drawing.Size(160, 23);
+            this.lblSum.Size = new System.Drawing.Size(193, 23);
             this.lblSum.TabIndex = 4;
             this.lblSum.Text = "Sum of test scores: ";
             // 
@@ -89,35 +89,35 @@
             this.lblAvg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAvg.Location = new System.Drawing.Point(38, 239);
             this.lblAvg.Name = "lblAvg";
-            this.lblAvg.Size = new System.Drawing.Size(160, 23);
+            this.lblAvg.Size = new System.Drawing.Size(193, 23);
             this.lblAvg.TabIndex = 5;
             this.lblAvg.Text = "Average test scores: ";
             // 
-            // lblMin
+            // lblLowest
             // 
-            this.lblMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMin.Location = new System.Drawing.Point(38, 274);
-            this.lblMin.Name = "lblMin";
-            this.lblMin.Size = new System.Drawing.Size(160, 23);
-            this.lblMin.TabIndex = 6;
-            this.lblMin.Text = "Lowest test scores: ";
+            this.lblLowest.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLowest.Location = new System.Drawing.Point(38, 274);
+            this.lblLowest.Name = "lblLowest";
+            this.lblLowest.Size = new System.Drawing.Size(193, 23);
+            this.lblLowest.TabIndex = 6;
+            this.lblLowest.Text = "Lowest test scores: ";
             // 
-            // lblMax
+            // lblHighest
             // 
-            this.lblMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMax.Location = new System.Drawing.Point(38, 306);
-            this.lblMax.Name = "lblMax";
-            this.lblMax.Size = new System.Drawing.Size(160, 23);
-            this.lblMax.TabIndex = 7;
-            this.lblMax.Text = "Highest test scores: ";
+            this.lblHighest.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHighest.Location = new System.Drawing.Point(38, 306);
+            this.lblHighest.Name = "lblHighest";
+            this.lblHighest.Size = new System.Drawing.Size(193, 23);
+            this.lblHighest.TabIndex = 7;
+            this.lblHighest.Text = "Highest test scores: ";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblMax);
-            this.Controls.Add(this.lblMin);
+            this.Controls.Add(this.lblHighest);
+            this.Controls.Add(this.lblLowest);
             this.Controls.Add(this.lblAvg);
             this.Controls.Add(this.lblSum);
             this.Controls.Add(this.lblCount);
@@ -139,8 +139,8 @@
         private System.Windows.Forms.Label lblCount;
         private System.Windows.Forms.Label lblSum;
         private System.Windows.Forms.Label lblAvg;
-        private System.Windows.Forms.Label lblMin;
-        private System.Windows.Forms.Label lblMax;
+        private System.Windows.Forms.Label lblLowest;
+        private System.Windows.Forms.Label lblHighest;
     }
 }
 
