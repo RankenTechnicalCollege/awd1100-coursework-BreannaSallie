@@ -41,6 +41,7 @@
             this.btnWithdraw = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.txtWithdraw = new System.Windows.Forms.TextBox();
+            this.lblBalance = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // accnum
@@ -85,38 +86,41 @@
             // 
             // lblMessage
             // 
-            this.lblMessage.Location = new System.Drawing.Point(35, 110);
+            this.lblMessage.Location = new System.Drawing.Point(35, 280);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(339, 49);
+            this.lblMessage.Size = new System.Drawing.Size(239, 35);
             this.lblMessage.TabIndex = 5;
+            this.lblMessage.Click += new System.EventHandler(this.lblMessage_Click);
             // 
             // lbldeposit
             // 
-            this.lbldeposit.Location = new System.Drawing.Point(35, 184);
+            this.lbldeposit.Location = new System.Drawing.Point(32, 139);
             this.lbldeposit.Name = "lbldeposit";
             this.lbldeposit.Size = new System.Drawing.Size(212, 23);
             this.lbldeposit.TabIndex = 6;
             this.lbldeposit.Text = "Would you like to make a deposit?";
+            this.lbldeposit.Click += new System.EventHandler(this.lbldeposit_Click);
             // 
             // btnDeposit
             // 
-            this.btnDeposit.Location = new System.Drawing.Point(236, 210);
+            this.btnDeposit.Location = new System.Drawing.Point(212, 165);
             this.btnDeposit.Name = "btnDeposit";
             this.btnDeposit.Size = new System.Drawing.Size(75, 23);
             this.btnDeposit.TabIndex = 7;
             this.btnDeposit.Text = "Deposit";
             this.btnDeposit.UseVisualStyleBackColor = true;
+            this.btnDeposit.Click += new System.EventHandler(this.btnDeposit_Click_1);
             // 
             // txtDeposit
             // 
-            this.txtDeposit.Location = new System.Drawing.Point(38, 212);
+            this.txtDeposit.Location = new System.Drawing.Point(35, 165);
             this.txtDeposit.Name = "txtDeposit";
             this.txtDeposit.Size = new System.Drawing.Size(171, 20);
             this.txtDeposit.TabIndex = 8;
             // 
             // lblwithdraw
             // 
-            this.lblwithdraw.Location = new System.Drawing.Point(35, 262);
+            this.lblwithdraw.Location = new System.Drawing.Point(32, 214);
             this.lblwithdraw.Name = "lblwithdraw";
             this.lblwithdraw.Size = new System.Drawing.Size(212, 23);
             this.lblwithdraw.TabIndex = 9;
@@ -124,34 +128,44 @@
             // 
             // btnWithdraw
             // 
-            this.btnWithdraw.Location = new System.Drawing.Point(236, 257);
+            this.btnWithdraw.Location = new System.Drawing.Point(212, 237);
             this.btnWithdraw.Name = "btnWithdraw";
             this.btnWithdraw.Size = new System.Drawing.Size(75, 23);
             this.btnWithdraw.TabIndex = 10;
             this.btnWithdraw.Text = "Withdraw";
             this.btnWithdraw.UseVisualStyleBackColor = true;
+            this.btnWithdraw.Click += new System.EventHandler(this.btnWithdraw_Click_1);
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(103, 332);
+            this.btnLogout.Location = new System.Drawing.Point(38, 354);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(75, 23);
             this.btnLogout.TabIndex = 11;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click_1);
             // 
             // txtWithdraw
             // 
-            this.txtWithdraw.Location = new System.Drawing.Point(38, 288);
+            this.txtWithdraw.Location = new System.Drawing.Point(35, 240);
             this.txtWithdraw.Name = "txtWithdraw";
             this.txtWithdraw.Size = new System.Drawing.Size(171, 20);
             this.txtWithdraw.TabIndex = 12;
+            // 
+            // lblBalance
+            // 
+            this.lblBalance.Location = new System.Drawing.Point(35, 315);
+            this.lblBalance.Name = "lblBalance";
+            this.lblBalance.Size = new System.Drawing.Size(239, 26);
+            this.lblBalance.TabIndex = 13;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(527, 398);
+            this.Controls.Add(this.lblBalance);
             this.Controls.Add(this.txtWithdraw);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnWithdraw);
@@ -187,6 +201,7 @@
         private System.Windows.Forms.Button btnWithdraw;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.TextBox txtWithdraw;
+        private System.Windows.Forms.Label lblBalance;
     }
 }
 
