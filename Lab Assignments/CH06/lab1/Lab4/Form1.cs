@@ -1,51 +1,59 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Lab4
 {
     public partial class Form1 : Form
     {
+        // constants used by the required methods
+        private const int HEIGHT = 9;              // wall height in feet
+        private const double COST_PER_SQFT = 6.0;  // price per square foot
 
-        private const int HEIGHT = 9;
-        private const int COST_PER_SQFT = 6;
         public Form1()
         {
             InitializeComponent();
+            Text = "Painting Estimate";
+            this.AcceptButton = btnCalculate;   // Enter key triggers Calculate
+
+            // optional: starting text
+            lblArea.Text = "Area: 0 sq ft";
+            lblCost.Text = "Cost: $0";
         }
 
-        private void lblLength_Click(object sender, EventArgs e)
-        {
-
-        }
-  private void btnCalculate_Click(object sender, EventArgs e)
-        {
-            if (int.TryParse(txtLength.Text, out int length) &&
-                int.TryParse(txtWidth.Text, out int width))
-            {
-                int totalArea = CalculateTotalArea(length, width);
-                int totalCost = totalArea * COST_PER_SQFT;
-
-                lblArea.Text = $"Area: {totalArea} sq ft";
-                lblCost.Text = $"Cost: ${totalCost}";
-            }
-            else
-            {
-                MessageBox.Show("Please enter valid numbers for length and width.");
-            }
-        }
-
-        // This method calculates the total wall area
+        // === REQUIRED by unit tests ===
         private int CalculateTotalArea(int length, int width)
         {
-            // 2 walls of length x height, 2 walls of width x height
+            // total paintable wall area: 2*h*(L + W)
             return 2 * HEIGHT * (length + width);
+        }
+
+        // === REQUIRED by unit tests ===
+        private double CalculatePaintEstimate(int totalArea)
+        {
+            return totalArea * COST_PER_SQFT;
+        }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtLength.Text.Trim(), out int length) ||
+                !int.TryParse(txtWidth.Text.Trim(), out int width) ||
+                length <= 0 || width <= 0)
+            {
+                MessageBox.Show("Please enter positive whole numbers for length and width.");
+                return;
+            }
+
+            int area = CalculateTotalArea(length, width);
+            double cost = CalculatePaintEstimate(area);
+
+            lblArea.Text = $"Area: {area} sq ft";
+            lblCost.Text = $"Cost: {cost:C0}";   // e.g., $3,888
+        }
+
+        // Designer had this wired; keep it so the Designer loads without errors.
+        private void lblLength_Click(object sender, EventArgs e)
+        {
+            // no action needed
         }
     }
 }

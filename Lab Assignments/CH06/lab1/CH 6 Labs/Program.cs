@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CH_6_Labs
+namespace FortuneCookieApp
 {
     internal static class Program
     {
